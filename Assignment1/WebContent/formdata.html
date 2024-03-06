@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form details</title>
+<style>
+#dis{
+   width:200px;
+	padding:10px;
+	border:2px solid;
+	border-radius: 25px;
+	}
+	label{
+	text-transform:capitalize;
+	}
+</style>
+
+</head>
+<body>
+<div id="dis">
+
+</div>
+<script>
+
+document.addEventListner('DOMContentLoaded',display());
+function display() {
+    let data = document.getElementById("dis");
+    let formData = localStorage.getItem("formData");
+    formData = JSON.parse(formData);
+    if (formData) {
+        for (let key in formData) {
+            if (formData.hasOwnProperty(key)) {
+                
+            	data.innerHTML += `
+                    <div >
+                        <label>${key} :</label>
+                        <span>${formData[key]}</span>
+                    </div>
+                `;
+            }
+        }
+    } else {
+    	data.innerText = "No form data available.";
+    }
+}</script>
+</body>
+</html>

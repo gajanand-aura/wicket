@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Wicket-Form</title>
+
+
+</head>
+<body>
+<form wicket:id="form">
+
+<table style="margin: 100px 500px; border: 2px solid black; padding: 10px;">
+
+<tr>
+<td  colspan="2" align="center"><h1>Login Form</h1></td>
+
+</tr>
+<tr>
+<td><label>FirstName</label></td>
+<td><input wicket:id="fn" type="text"> </td>
+</tr>
+
+<tr>
+<td><label>LastName</label></td>
+<td><input wicket:id="ln" type="text"> </input></td>
+</tr>
+
+<tr>
+<td><label>Email</label></td>
+<td><input wicket:id="email" type="email"> </input></td>
+</tr>
+
+<tr>
+<td><label>Phone</label></td>
+<td><input wicket:id="phone" type="text"> </input></td>
+
+</tr>
+
+<tr>
+<td><label>Age</label></td>
+<td><input wicket:id="age" type="text"> </input></td>
+</tr>
+
+<tr>
+<td><label>Country</label></td>
+<td><select wicket:id="country" > </select></td>
+</tr>
+
+<tr>
+<td><label>State</label></td>
+<td><select wicket:id="state" > </select></td>
+</tr>
+
+<tr>
+<td><label>Gender:</label></td>
+<td><span wicket:id="ge"></span></td>
+</tr>
+
+<tr>
+<td><label>Fruit:</label></td>
+<td><select wicket:id="fruit" ></select></td>
+</tr>
+
+<tr>
+<td><label>IsIndian</label></td>
+<td><input wicket:id="in" type="checkbox"> </input></td>
+</tr>
+
+<tr style="border:1px solid;">
+<td colspan="2"><textarea wicket:id="description" placeholder="Discription" rows="5" cols="40"></textarea></td>
+
+</tr>
+
+<tr style="border:1px solid;" align="right">
+<td colspan="2" align="center"><input wicket:id="button" type="submit" value="Submit"> </input></td>
+</tr>
+
+
+</table>
+
+
+
+</form>
+<p wicket:id="msg"></p>
+</body>
+</html>

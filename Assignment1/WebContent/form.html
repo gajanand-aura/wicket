@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<style>.error-message {
+        color: red; 
+    }
+</style>
+<link rel="stylesheet" href="form.css" />
+</head>
+<body > 
+<div  class ="abc" style="background-color: lightblue;">
+<div class="main" >
+
+  <form onsubmit="submitForm(event)" >
+  <h1  style="color: white;" align="center" >REGISTRATION FORM</h1>
+  <div style="display:flex;" >
+  <div class="section1">
+        <div class="child">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"  >
+        </div>
+        <div class="child"> 
+           <label for="email">Email:</label>
+           <input type="email" id="email" required>
+        </div>
+       
+        <div class="child">
+        <label  for="country" >Country:</label> 
+        <select id="country" name="country"  onchange="populateStates()">
+        <option value="">Select Country</option>
+        <option value="India">India</option>
+        <option value="US">US</option>
+        <option value="UK">UK</option>
+        </select>
+         </div>
+     
+         <div class="child">
+               <label  for="state">State:</label>
+               <select id="state"  name="state" >
+              <option value="">Select State</option>
+              </select>
+         </div> 
+    </div>
+ 
+    <div class="section2">
+        <div class="A"> 
+             <label for="gender">Gender:</label>
+             <input type="radio" id="checked" name="gender" value="male">
+             <label for="male">Male</label>
+             <input type="radio" id="checked" name="gender" value="female">
+             <label for="female">Female</label>
+        </div>
+        <br>  <br> 
+        <div class="B" >
+            <input type="checkbox"  name="checkbox" id="married" value="value">
+            <label for="checkbox">Married</label>
+        </div>
+        <br> <br> 
+        <div class="C"> 
+            <input type="checkbox"  name="checkbox" id="indian" value="value">
+            <label for="checkbox">Indian</label>
+        </div>
+     </div>
+     </div>
+     <div class="section3">
+     <div align="center"> 
+     <input type="checkbox"  name="checkbox" id="none" value="value" required>
+            <label for="checkbox">I agree to the T&C specified in this</label>
+            <a href="https://www.techtarget.com/whatis/definition/information-security-management-system-ISMS">link</a>
+     
+        <br> <br>
+    
+        <input  type="submit" value="Submit" style="background-color: green;">
+    </div>
+
+     </div>
+  </form>
+  </div>
+  </div>
+
+<script src="form.js">
+
+</script>
+</body>
+</html>
