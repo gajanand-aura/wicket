@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+  background-image:url("https://click4vector.com/public/uploads/preview/abstract-wave-vector-background-hd-wallpaper-image-11641898933uccrtv4yqv.jpg");
+  background-repeat: no-repeat; 
+  background-size:100%;
+        margin:0px;
+        padding: 0;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+   
+    }
+    img{
+    margin-left: 3em;
+    }
+    
+    
+    form {
+       height:35em;
+       width: 25em; 
+       padding: 20px;
+      
+        background-color: rgba(0,0,0,0.5);
+    }
+    form table {
+        width: 100%;
+    }
+    form table td {
+        padding: 5px;
+    }
+     form input[type="text"],
+    form input[type="password"]
+     {
+        margin-top:50px;
+        width: 80%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+    } 
+    header{
+    display:flex;
+    align-items:center;
+  border:1px solid;
+   height: 7em;
+     width: 100%; 
+    }
+    footer{
+   border:1px solid;
+    width: 100%; 
+    height: 50%;
+    
+    display:flex;
+    flex-direction:column;
+    }
+    footer input[type="email"],
+    footer textarea
+     {
+       margin-top:50px;
+        width: 20%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border-radius: 5px;}
+  
+</style>
+</head>
+<body>
+
+<header align="left">
+   <img width="10%"  alt="no-image" src="https://images.squarespace-cdn.com/content/v1/61849a07a0dd2946ae50fe36/cc6a228a-9d54-43a1-a567-e7ba68974780/logo.png">
+</header>
+
+<form id="loginForm">
+
+    <h1 align="left">Login</h1>
+    <table>
+        <tr>
+           
+            <td><input type="text" placeholder="Username" name="username" required></td>
+        </tr>
+        <tr>
+           
+            <td><input type="password" placeholder="Password" name="password" required></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right"><input type="submit" value="Login" style="background-color: green; color: white;"></td>
+        </tr>
+    </table>
+   
+</form>
+ <footer>
+        <table >
+        <tr>
+         <td> 
+          <input type="email" placeholder="Email_id" name="email" required>
+          </td>
+        </tr>
+        <tr>
+            <td>            
+            <textarea rows="2" cols="20"></textarea></td>
+        </tr>
+         <tr>
+        
+           <td ><input type="button" value="Submit" style="background-color: green; color: white;"/></td>
+        </tr>
+       </table> 
+</footer>
+
+<script> 
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    window.location.href = "OnLogin.html";
+ 
+});
+
+</script>
+</body>
+</html>
